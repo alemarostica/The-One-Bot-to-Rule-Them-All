@@ -6,6 +6,9 @@ module.exports = {
     .setName('cat')
     .setDescription('The strongest entity in the world'),
     async execute(interaction) {
-        await interaction.reply("placeholder per futura immagine");
+        const str = "placeholder per futura immagine";
+        await interaction.reply(str);
+        console.log(`Called command '${interaction}'`);
+        console.log(`Bot replied: ${str}`);
     }
 }

@@ -5,6 +5,9 @@ module.exports = {
     .setName('saluta')
     .setDescription('saluda andonio'),
     async execute(interaction) {
-        await interaction.reply(`Ciao, ${interaction.user}.`);
+        const str = `Ciao, ${interaction.user}!`;
+        await interaction.reply(str);
+        console.log(`Called command '${interaction}'`);
+        console.log(`Bot replied: ${str}`);
     },
 };

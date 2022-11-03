@@ -19,7 +19,8 @@ module.exports = {
         //console.log(rnd);
         const str = (`${insultsArray[rnd]}, ${interaction.options.getUser('target')}`);
         await interaction.reply(str);
-        console.log(`Called command '${interaction}'`)
+        console.log(`Called command '${interaction}'`);
+        console.log(`Selected insult in position: ${rnd}`);
         console.log(`Bot replied: ${str}`);
     },
 };

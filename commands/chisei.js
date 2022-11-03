@@ -5,6 +5,9 @@ module.exports = {
     .setName('chisei')
     .setDescription('Chi sono?'),
     async execute(interaction) {
-        await interaction.reply({content: `Sono un piccolo bot della foresta incantata`, ephemeral: true});
+        const str = `Sono un piccolo bot della foresta incantata`;
+        await interaction.reply({content: str, ephemeral: true});
+        console.log(`Called command '${interaction}'`);
+        console.log(`Bot replied: ${str}`);
     },
 };

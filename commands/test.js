@@ -5,7 +5,9 @@ module.exports = {
     .setName('test')
     .setDescription('Salute!'),
     async execute(interaction) {
-        await interaction.reply('se vedi questa risposta vuol dire che funziono');
-        console.log(interaction.user.id);
+        const str = "se vedi questa risposta vuol dire che funziono";
+        await interaction.reply(str);
+        console.log(`Called command '${interaction}'`);
+        console.log(`Bot replied: ${str}`);
     },
 };
