@@ -15,7 +15,7 @@ module.exports = {
         const insults = fs.readFileSync('insulti.txt', 'utf-8');
         let insultsArray = insults.split(/\r?\n/);
         //console.log(insultsArray + insultsArray.length);
-        const rnd = Math.floor(Math.random() * (insultsArray.length - 1));
+        const rnd = Math.floor(Math.random() * (insultsArray.length));
         //console.log(rnd);
         const str = (`${insultsArray[rnd]}, ${interaction.options.getUser('target')}`);
         await interaction.reply(str);
